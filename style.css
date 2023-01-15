@@ -1,0 +1,243 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url("tof4.jpg") no-repeat  ;
+    background-size:cover;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.contact{
+    max-width: 700px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color:#221919;
+    border: 2px solid rgb(113, 108, 108);
+    box-shadow: 0.5px 0.5px 5px rgb(246, 235, 235);
+    border-radius: 5px 5px 5px 5px;
+}
+.left{
+    background: url("tof1.PNG") no-repeat center;
+    height: 545px;
+    bottom: 1px;
+    position: relative;
+    left: 0px;
+    background-color: transparent;
+}
+.right{
+    padding: 25px 40px;
+    color: #221919;
+}
+h3{
+    position: relative;
+    left: 20px;
+    color: #fff;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.fielT{
+    width: 100%;
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0);
+    margin-bottom: 22px;
+    background-color: rgba(230,230, 230, 0.6);
+    font-size: 1.1rem;
+    transition: 3s;
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0);
+    margin-bottom: 22px;
+    background-color: rgba(230,230, 230, 0.6);
+    font-size: 1.1rem;
+    transition: 3s;
+}
+.log input[placeholder="Dve Joofy"],input[placeholder="Numero de telephone"]{
+    position: relative;
+    color: #fff;
+    border: 0px 0px;
+    padding-left: 1px;
+}
+.log input[type="number"],input[type="password"]{
+    color: white;
+    border: none;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.log input[type="text"]{
+    color: white;
+    border: none;
+    background-color:transparent;
+    border-bottom: 1px solid #D1A97E;
+    cursor: pointer;
+}
+.log label{
+    color: #D1A97E;
+}
+#monselect{
+    color: white;
+    border: none;
+    background-color:transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#monselect1{
+    color: white;
+    border: none;
+    background-color:transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fielTA{
+    color: white;
+    border: none;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+}
+.Resi{
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    padding: 10px 30px;
+    background-color: #D1A97E;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+     cursor: pointer;
+}
+.log p{
+    color: #fff;
+}
+.log .foot{
+    color: #D1A97E;
+}
+.log .button .env{
+    display: inline-block;
+    border-radius: 99%;
+}
+
+.log .env{
+    display: inline-block;
+    flex-direction: row;
+    border-radius: 99%;
+    margin-left: 0px;
+    margin-top: 10px;
+    padding: 5px;
+    transition: all 900ms ease;
+    
+}
+.log .env:hover{
+    background-color: #D1A97E;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+.env-btn{
+    background-color: #fff;
+    color: #221919;
+    padding: 10px;
+    border-radius: 50px;
+}
+.log .env:hover .env-btn{
+    background-color: #221919;
+    color: #fff;
+}
+.personne{
+    display: none;
+}
+.log .env:hover .personne{
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    background: tra;
+}
+
+@media screen and (max-width: 780px){
+    .contact{
+        max-width: 400px;
+        height: 530px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        background-color:#221919;
+        border: 2px solid rgb(113, 108, 108);
+        box-shadow: 0.5px 0.5px 5px rgb(246, 235, 235);
+        border-radius: 5px 5px 5px 5px;
+    }
+    .left{
+        height:525px;
+        background: url("tof1.PNG") no-repeat center;
+        width: 100px;
+        position: relative;
+        left: 0px;
+        background-color: transparent;
+        bottom: 0px;
+    }
+    .right{
+        width: 200px;
+        padding: 25px 40px;
+        color: #221919;
+    }
+    h3{
+        width: 100%;
+        font-size: 8px;
+        position: relative;
+        float: right;
+        right: 10px;
+       
+    }
+    .log p{
+        color: #fff;
+        font-size: 10px;
+    }
+    .Resi{
+        display: flex;
+        position: relative;
+        margin-top: 20px;
+        bottom: 10px;
+        margin-left: 0px;
+        padding: 5px 15px;
+        background-color: #D1A97E;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .log .env{
+        display: inline-block;
+        border-radius: 99%;
+        margin-left: 0px;
+        margin-top: 5px;
+        padding: 0px;
+        transition: all 500ms ease;
+
+        
+
+       
+    }
+   
+}
+
+
